@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="zxx">
+
+<!-- Mirrored from gfxpartner.com/Frolic/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Mar 2025 10:25:00 GMT -->
+
+<head>
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Safari Sutra Holidays</title>
+  <meta name="author" content="Safari Sutra Holidays">
+  <meta name="description" content="Discover the Real Goa | Authentic Experiences Beyond the Tourist Trail">
+  <meta name="keywords"
+    content="tour, ice, trip, travel, agency, life, vacation, treking, boat, walking, climbing, transition, svg, html, css">
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chalogoa.com/">
+  <meta property="og:title" content="Safari Sutra Holidays">
+  <meta property="og:description" content="Discover the Real Goa | Authentic Experiences Beyond the Tourist Trail">
+  <meta property="og:image" content="https://chalogoa.com/images/Packages/logo.png">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/svg+xml" href="ico/favicon.png" />
+
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/daterangepicker.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Story Section - Enhanced for Responsiveness */
+    .story-section {
+      padding: 50px 20px;
+      /* Reduce default padding */
+      display: flex;
+      justify-content: center;
+    }
+
+    .story-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      max-width: 1200px;
+      /* Control maximum width */
+      width: 100%;
+    }
+
+    .story-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .story-image img {
+      width: 100%;
+      max-width: 350px;
+      /* Maximum image width */
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .story-content {
+      flex: 2;
+    }
+
+    .story-content h5 {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #555;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .story-content h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .story-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 992px) {
+      .story-section {
+        padding: 40px 20px;
+      }
+
+      .story-content h2 {
+        font-size: 32px;
+      }
+
+      .story-content p {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .story-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .story-image {
+        order: 1;
+        margin: 0 auto;
+      }
+
+      .story-content {
+        order: 2;
+      }
+
+      .story-content h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .story-content h5 {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .story-section {
+        padding: 30px 15px;
+      }
+
+      .story-content h2 {
+        font-size: 24px;
+      }
+
+      .story-content p {
+        font-size: 15px;
+      }
+
+      .story-container {
+        gap: 20px;
+      }
+    }
+
+    /* Core Values Section - Enhanced Responsiveness */
+    .core-values {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 60px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .values-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Value Card Styling */
+    .value-card {
+      flex: 0 0 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+      min-width: 215px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .value-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .value-header {
+      padding: 15px 10px;
+      color: #fff;
+      font-weight: bold;
+      position: relative;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .value-header h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    /* Value Content */
+    .value-content {
+      padding: 20px;
+      height: calc(100% - 50px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .value-content .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 144, 25, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      transition: all 0.3s ease;
+    }
+
+    .value-content .icon i {
+      font-size: 36px;
+      color: #ff7043;
+    }
+
+    .value-content p {
+      font-size: 16px;
+      color: #666;
+      flex-grow: 1;
+      margin: 0;
+    }
+
+    .value-card:hover .value-content .icon {
+      background: rgba(255, 144, 25, 0.2);
+      transform: translateY(-5px);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .title {
+        font-size: 48px;
+        margin-bottom: 30px;
+      }
+
+      .value-card {
+        flex: 0 0 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+      }
+    }
+
+    @media (max-width: 992px) {
+
+      /* 3 columns on tablet */
+      .value-card {
+        flex: 0 0 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+      }
+
+      .title {
+        font-size: 42px;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      /* 2 columns on smaller tablets and mobile */
+      .value-card {
+        flex: 0 0 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+      }
+
+      .title {
+        font-size: 36px;
+        margin-bottom: 25px;
+      }
+
+      .value-content {
+        padding: 15px;
+      }
+
+      .icon {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .value-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        min-width: 100%;
+      }
+
+      .title {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .value-header h3 {
+        font-size: 18px;
+      }
+
+      .value-content p {
+        font-size: 14px;
+      }
+
+      .icon {
+        font-size: 28px;
+      }
+
+      .core-values {
+        padding: 30px 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .value-content .icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+      }
+
+      .value-content .icon i {
+        font-size: 28px;
+      }
+    }
+
+
+    /* Individual Colors */
+    .teamwork,
+    .responsibility,
+    .reliability {
+      background-color: #ff7043;
+    }
+
+    .vision,
+    .ethics,
+    .excellence {
+      background-color: #3a2a1d;
+    }
+
+    /* Why Choose Chalo Goa? - Enhanced Mobile Responsive Styling */
+    .our-history {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 80px 0;
+      background: #f4fbff;
+    }
+
+    .our-history .section-title {
+      width: 100%;
+      float: left;
+      position: relative;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .our-history .wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 50px;
+    }
+
+    .our-history .wrapper:last-child {
+      margin-bottom: 0;
+    }
+
+    .our-history .wrapper figure {
+      flex-basis: 50%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5%;
+      padding-bottom: 25px;
+    }
+
+    .our-history .wrapper figure img {
+      width: 75%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .our-history .wrapper .content {
+      flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .our-history .wrapper .inner {
+      display: block;
+    }
+
+    .our-history .wrapper .inner h4 {
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .our-history .wrapper .inner p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #444;
+      text-align: justify;
+    }
+
+    /* Media queries for responsive design */
+    @media (max-width: 992px) {
+      .our-history {
+        padding: 60px 20px;
+      }
+
+      .our-history .wrapper .content {
+        padding: 20px;
+      }
+
+      .our-history .wrapper .inner h4 {
+        font-size: 24px;
+      }
+
+      .our-history .wrapper .inner p {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .our-history {
+        padding: 40px 15px;
+      }
+
+      /* Key change: Make all wrappers follow the same pattern for mobile */
+      .our-history .wrapper {
+        flex-direction: column;
+        margin-bottom: 40px;
+      }
+
+      /* Always place image first, then content */
+      .our-history .wrapper figure {
+        order: 1;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .our-history .wrapper .content {
+        order: 2;
+        width: 100%;
+        padding: 0;
+      }
+
+      /* This applies to all wrappers now, including the second one */
+      .our-history .wrapper:nth-child(2) figure {
+        order: 1;
+      }
+
+      .our-history .wrapper:nth-child(2) .content {
+        order: 2;
+      }
+
+      .our-history .wrapper .inner h4 {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      .our-history .wrapper figure img {
+        width: 85%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .our-history {
+        padding: 30px 15px;
+      }
+
+      .our-history .wrapper {
+        margin-bottom: 30px;
+      }
+
+      .our-history .wrapper .inner h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .our-history .wrapper .inner p {
+        font-size: 14px;
+      }
+
+      .our-history .wrapper figure {
+        margin-bottom: 15px;
+      }
+
+      .our-history .wrapper figure img {
+        width: 100%;
+      }
+    }
+
+    /* Milestone section improvements */
+    .milestones {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .milestones figure {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .milestones img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .milestone-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .milestone-item h5 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 15px 0 10px;
+      color: #333;
+    }
+
+    .milestone-item span {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #666;
+      display: block;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .milestone-row {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    /* For better spacing between rows */
+    .milestone-row:first-of-type {
+      margin-bottom: 20px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767px) {
+      .milestones {
+        padding: 40px 0;
+      }
+
+      .milestone-item {
+        margin-bottom: 30px;
+      }
+
+      .milestone-item span {
+        max-width: 100%;
+      }
+
+      .milestones .section-title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+
+      .milestones .section-title h2 {
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+        font-size: 30px;
+      }
+    }
+
+    /* Mobile Footer Centering */
+    @media only screen and (max-width: 767px) {
+
+      /* Center footer content */
+      .footer .col-lg-4,
+      .footer .col-md-4 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      /* Center footer menu items */
+      .footer .footer-menu {
+        display: inline-block;
+        text-align: center;
+        padding-left: 0;
+      }
+
+      /* Center address and contact info */
+      .footer address,
+      .footer .contact-info {
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      /* Center social media icons */
+      .footer .social-media {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 20px auto;
+        padding-left: 0;
+        /* Remove default padding */
+      }
+
+      .footer .col-12 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+      }
+
+      /* Center copyright text */
+      .footer .copyright {
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin: 10px auto;
+      }
+
+      /* Fix icon alignment in centered content */
+      .footer .contact-info i,
+      .footer address i {
+        margin-right: 5px;
+        /* Optional: make icons slightly smaller on mobile */
+        font-size: 14px;
+      }
+    }
+
+    /* Make sure container has proper padding */
+    @media only screen and (max-width: 575px) {
+      .footer .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    /* CTA Button styling */
+    .cta-button {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #ff9019;
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      border: 2px solid #ff9019;
+      box-shadow: 0 5px 15px rgba(255, 144, 25, 0.2);
+    }
+
+    .cta-button:hover {
+      background: #fff;
+      color: #ff9019;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 144, 25, 0.3);
+      text-decoration: none;
+    }
+
+    /* For dark backgrounds like your quote section */
+    .quote .cta-button {
+      background: #fff;
+      color: #ff9019;
+      border-color: #fff;
+    }
+
+    .quote .cta-button:hover {
+      background: #ff9019;
+      color: #fff;
+      border-color: #ff9019;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 767px) {
+      .cta-button {
+        padding: 12px 26px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header-int">
+    <div class="container">
+      <nav class="navbar dark"> <a href="index.html" class="navbar-brand"><img src="images/Packages/logo.png"
+            alt="Image"></a>
+        <div class="menu-btn">
+          <div class="menu-circle-wrap">
+            <div class="wave"></div>
+            <svg class="menu-circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              preserveAspectRatio="xMidYMid" width="52" height="52" viewBox="0 0 52 52">
+              <path d="M1,26a25,25 0 1,0 50,0a25,25 0 1,0 -50,0"></path>
+            </svg>
+          </div>
+          <div class="bars">
+            <div class="bar b1"></div>
+            <div class="bar b2"></div>
+            <div class="bar b3"></div>
+          </div>
+        </div>
+        <!-- end menu-btn -->
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown"><a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link" href="about-us.html">ABOUT US</a>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link">PACKAGES</a>
+            <ul class="dropdown-menu">
+              <li><a href="exclusivepackages.html">EXCLUSIVE PACKAGES</a></li>
+              <li><a href="curatedpackages.html">CURATED PACKAGES</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item dropdown"><a class="nav-link" href="blog.html">BLOG</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- end navbar -->
+    </div>
+    <!-- end container -->
+  </header>
+  <!-- end header-int -->
+  <section class="about-us-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title page-title">
+            <h2>About Us</h2>
+            <p>Our mission is to transform ordinary Goa trips into extraordinary journeys of discovery. We aim to
+              provide authentic and immersive experiences that connect travelers with the true essence of Goa—its
+              vibrant nature, rich culture, thrilling adventures, and spirited lifestyle. By offering carefully curated
+              experiences, we ensure that every traveler explores Goa beyond the usual tourist spots, discovering hidden
+              gems and local traditions. Whether it's savoring Goan cuisine, engaging with local communities, or
+              exploring untouched beaches and lush landscapes, we strive to create meaningful and memorable moments that
+              reflect the heart and soul of Goa, making each trip truly special.</p>
+          </div>
+          <!-- end section-title -->
+        </div>
+        <!-- end col-12 -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end about-us -->
+
+  <section class="story-section">
+    <div class="story-container">
+      <div class="story-image">
+        <img src="images/Packages/aboutstory.jpg" alt="Sunset at Goa Beach" />
+      </div>
+      <div class="story-content">
+        <h5>OUR STORY</h5>
+        <h2>Where Passion Meets Paradise</h2>
+        <p>Safari Sutra Holidays was founded on the belief that Goa is more than just beaches and parties—it’s a land of
+          culture, adventure, and hidden gems waiting to be explored authentically.</p>
+
+        <p>Our journey began when a group of passionate travelers uncovered Goa’s lesser-known wonders—hidden
+          waterfalls, centuries-old temples, unmarked beaches, and a rich Indo-Portuguese heritage. Realizing most
+          tourists only scratch the surface, we set out to create experiences beyond the ordinary.</p>
+
+        <p>In 2014, Safari Sutra Holidays was born, along with our signature brand Chalo Goa, dedicated to unveiling the
+          authentic soul of this coastal paradise. The name reflects our vision—"Safari" symbolizes discovery, while
+          "Sutra" connects travelers to meaningful experiences.</p>
+
+        <p>What started as adventure tours for friends soon grew into a full-fledged travel service. Today, we take
+          pride in helping thousands—from solo adventurers to families—discover Goa through immersive, offbeat, and
+          deeply local experiences.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="story-section">
+    <div class="story-container">
+      <div class="story-content">
+        <h2>From Guests to Family</h2>
+        <p>
+          At Chalo Goa, we don't have customers; we have guests who quickly become family. Our team comprises passionate
+          Goa specialists—many born and raised here—who bring intimate knowledge of the region's terrain, culture, and
+          hidden treasures. This local expertise allows us to create experiences that balance adventure with safety,
+          excitement with relaxation, and tourist highlights with off-the-beaten-path authenticity.
+        </p>
+        <p>
+          Our commitment to responsible tourism means we partner with local communities, employ local guides, support
+          sustainable practices, and ensure that our presence benefits Goa's ecology and economy. We believe travel
+          should enrich both the traveler and the destination.
+        </p>
+      </div>
+      <div class="story-image">
+        <img src="images/Packages/aboutstory2.jpg" alt="Goa Beach Sunset" />
+      </div>
+    </div>
+  </section>
+
+  <section class="core-values">
+    <h2 class="title">OUR VALUES</h2>
+    <div class="values-container">
+      <!-- Authenticity -->
+      <div class="value-card">
+        <div class="value-header teamwork">
+          <h3>Authenticity</h3>
+        </div>
+        <div class="value-content">
+          <div class="icon">
+            <i class="fa fa-certificate"></i>
+          </div>
+          <p>We showcase the real Goa beyond the tourist façade, creating genuine connections between travelers and
+            destinations.</p>
+        </div>
+      </div>
+
+      <!-- Personalization -->
+      <div class="value-card">
+        <div class="value-header vision">
+          <h3>Personalization</h3>
+        </div>
+        <div class="value-content">
+          <div class="icon">
+            <i class="fa fa-user-circle"></i>
+          </div>
+          <p>No two travelers are alike, so no two Chalo Goa experiences should be identical. We tailor each journey to
+            your specific interests and needs.</p>
+        </div>
+      </div>
+
+      <!-- Responsibility -->
+      <div class="value-card">
+        <div class="value-header responsibility">
+          <h3>Responsibility</h3>
+        </div>
+        <div class="value-content">
+          <div class="icon">
+            <i class="fa fa-leaf"></i>
+          </div>
+          <p>We practice and promote sustainable tourism that respects and preserves Goa's natural environment and
+            cultural heritage.</p>
+        </div>
+      </div>
+
+      <!-- Community -->
+      <div class="value-card">
+        <div class="value-header ethics">
+          <h3>Community</h3>
+        </div>
+        <div class="value-content">
+          <div class="icon">
+            <i class="fa fa-users"></i>
+          </div>
+          <p>We believe in tourism that benefits local communities through employment, cultural exchange, and economic
+            support.</p>
+        </div>
+      </div>
+
+      <!-- Safety -->
+      <div class="value-card">
+        <div class="value-header reliability">
+          <h3>Safety</h3>
+        </div>
+        <div class="value-content">
+          <div class="icon">
+            <i class="fa fa-shield"></i>
+          </div>
+          <p>Adventure doesn't mean compromise on safety. Our experienced guides and carefully vetted activities ensure
+            peace of mind.</p>
+        </div>
+      </div>
+
+      <!-- Excellence -->
+      <div class="value-card">
+        <div class="value-header excellence">
+          <h3>Excellence</h3>
+        </div>
+        <div class="value-content">
+          <div class="icon">
+            <i class="fa fa-star"></i>
+          </div>
+          <p>From first inquiry to fond farewell, we strive for exceptional service that exceeds expectations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-history">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="section-title">
+          <h2>Why Choose Chalo Goa?</h2>
+          <!-- <img src="images/title-seperator.png" alt="Image"> -->
+        </div>
+        <!-- end section-title -->
+      </div>
+      <!-- end col-6 -->
+      <!-- <div class="col-lg-6">
+        <p class="section-desc">Orci varius natoque penatibus et magnis dis turient montes nascetur ridiculus mus. Cras eleifend tellus sed congue consectetur, velit turpis faucibus odio eget volutpat odio lectus eu erat.</p>
+      </div> -->
+      <!-- end col-6 -->
+      <div class="col-12">
+        <div class="wrapper">
+          <div class="content">
+            <div class="inner">
+              <h4>Local Expertise</h4>
+              <p>Our team includes native Goans who share insider knowledge you won't find in guidebooks. We know which
+                beaches have the best sunsets, which village kitchens serve the most authentic xacuti, and which trails
+                lead to the most spectacular viewpoints.</p>
+
+              <h4 style="padding-top: 20px;">Curated Experiences</h4>
+              <p>We don't offer generic packages. Each experience is thoughtfully designed to showcase Goa's
+                diversity—from adrenaline-pumping waterfall rappelling to meditative sunrise yoga sessions on secluded
+                beaches.
+              </p>
+            </div>
+            <!-- end inner -->
+          </div>
+          <!-- end content -->
+          <figure><img src="images/Packages/about1.jpg" alt="Image"></figure>
+        </div>
+        <!-- end wrapper -->
+        <div class="wrapper">
+          <figure><img src="images/Packages/about3.jpg" alt="Image"></figure>
+          <div class="content">
+            <div class="inner">
+              <h4>Personalized Attention</h4>
+              <p>With Chalo Goa, you're never just another booking. Our team takes the time to understand your
+                preferences, creating customized itineraries that reflect your travel style.
+              </p>
+
+              <h4 style="padding-top: 20px;">Sustainable Practices</h4>
+              <p>We were practicing eco-friendly tourism before it became trendy. Our trekking follows leave-no-trace
+                principles, our beach camps prioritize zero waste, and our partnerships support conservation efforts
+                across Goa.
+              </p>
+            </div>
+            <!-- end inner -->
+          </div>
+          <!-- end content -->
+        </div>
+        <!-- end wrapper -->
+        <div class="wrapper">
+          <div class="content">
+            <div class="inner">
+              <h4>Seamless Planning </h4>
+              <p>From airport pickups to specialized dietary requirements, we handle the details so you can focus on the
+                experience.
+              </p>
+
+              <h4 style="padding-top: 20px;">Community Connections</h4>
+              <p>Through our network of local artisans, chefs, musicians, and storytellers, we offer authentic cultural
+                exchanges that benefit both travelers and communities.
+
+              </p>
+            </div>
+            <!-- end inner -->
+          </div>
+          <!-- end content -->
+          <figure><img src="images/Packages/about2.jpg" alt="Image"></figure>
+        </div>
+        <!-- end wrapper -->
+      </div>
+      <!-- end col-12 -->
+    </div>
+    <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end history -->
+  <section class="milestones" id="counter">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pb-5">
+          <div class="section-title">
+            <h2>Our Approach</h2>
+            <p>At Chalo Goa, we believe the journey begins long before you arrive in Goa and continues long after you
+              leave. Our approach follows a simple philosophy</p>
+          </div>
+        </div>
+
+        <!-- First Row -->
+        <div class="row justify-content-center milestone-row">
+          <div class="col-lg-4 col-md-4 pb-5 text-center milestone-item">
+            <figure><img src="images/Packages/learn.png" alt="Image"></figure>
+            <h5>LISTEN</h5>
+            <span>We begin by understanding your dreams, preferences, and expectations for your Goa journey.</span>
+          </div>
+
+          <div class="col-lg-4 col-md-4 pb-5 text-center milestone-item">
+            <figure><img src="images/Packages/craft.png" alt="Image"></figure>
+            <h5>CRAFT</h5>
+            <span>Our specialists design an experience that balances your wishlist with our local insights, creating the
+              perfect itinerary.</span>
+          </div>
+
+          <div class="col-lg-4 col-md-4 pb-5 text-center milestone-item">
+            <figure><img src="images/Packages/connect.png" alt="Image"></figure>
+            <h5>CONNECT</h5>
+            <span>Before and during your trip, we ensure seamless communication and support.</span>
+          </div>
+        </div>
+
+        <!-- Second Row - Centered -->
+        <div class="row justify-content-center milestone-row">
+          <div class="col-lg-4 col-md-4 text-center milestone-item">
+            <figure><img src="images/Packages/experience.png" alt="Image"></figure>
+            <h5>EXPERIENCE</h5>
+            <span>While you're with us, we handle the logistics so you can fully immerse yourself in the magic of
+              Goa.</span>
+          </div>
+
+          <div class="col-lg-4 col-md-4 text-center milestone-item">
+            <figure><img src="images/Packages/remember.png" alt="Image"></figure>
+            <h5>REMEMBER</h5>
+            <span>We create moments worth remembering and mementos that capture the essence of your journey.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end milestones -->
+  <section class="quote bg-image" data-background="images/Packages/aboutbg.jpg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Join Our Journey</h2>
+          <p>Whether you're seeking adventure among the Western Ghats, tranquility on lesser-known beaches, or romantic
+            moments with someone special, Chalo Goa invites you to
+            experience this remarkable destination the way it deserves to be experienced — authentically, responsibly,
+            and
+            memorably.
+            <br>Your Goa story awaits.
+            <br>#ChaloGoa!
+          </p>
+
+          <div class="text-center mt-4">
+            <a href="contact.html" class="cta-button">Get a Free Quote!</a>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </div>
+  </section>
+  <!-- end quote -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="exclusivepackages.html">Exclusive Packages</a></li>
+            <li><a href="curatedpackages.html">Curated Packages</a></li>
+            <!-- <li><a href="blog.html">Blog</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-4">
+          <h5>POLICIES</h5>
+          <ul class="footer-menu">
+            <li><a href="termsandconditions.html">Terms and Conditions</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <!-- end col-3 -->
+        <div class="col-lg-4 col-md-4">
+          <h5>CONTACT US</h5>
+          <address>
+            <i class="fa fa-map-marker"></i> WeWork Chromium Jogeshwari <br>Link Road, Powai, Mumbai, <br>Maharashtra,
+            India
+          </address>
+          <div class="contact-info">
+            <p><a href="mailto:hello@thesafarisutra.com"><i class="fa fa-envelope"></i> hello@thesafarisutra.com</a></p>
+            <p><a href="mailto:sales@thesafarisutra.com"><i class="fa fa-envelope"></i> sales@thesafarisutra.com</a></p>
+            <p><a href="tel:+919967572970"><i class="fa fa-phone"></i> +91 9967572970</a></p>
+            <p><a href="tel:+919429690981"><i class="fa fa-phone"></i> +91 9429690981</a></p>
+          </div>
+        </div>
+        <!-- end col-3 -->
+      </div>
+      <!-- end col-3 -->
+      <div class="col-12 d-flex justify-content-between align-items-center pt-10">
+        <span class="copyright">&copy; 2025 Safari Sutra Holidays</span>
+        <ul class="social-media">
+          <li><a href="https://www.instagram.com/safarisutra/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/103599001/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://x.com/SafariSutra"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61560936836457"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- end col-12 -->
+    </div>
+    <!-- end row -->
+    </div>
+    <!-- end container -->
+  </footer>
+
+  <!-- JS FILES -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/odometer.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
