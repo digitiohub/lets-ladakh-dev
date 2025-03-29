@@ -1,169 +1,284 @@
+const packageSets = {
+    trekking: {
+      title: "Adventure Expeditions",
+      containerId: "adventure-package-list",
+      packages: [
+        // Trekking packages
+      ]
+    },
+    adventure: {
+      title: "Cultural Immersion",
+      containerId: "cultural-package-list",
+      packages: [
+        // Adventure packages
+      ]
+    },
+    cultural: {
+      title: "Exclusive Goa Cultural Heritage Packages: Journey Through Time",
+      containerId: "cultural-package-list",
+      packages: [
+        // Cultural packages
+      ]
+    },
+    wildlife: {
+      title: "Exclusive Goa Wildlife & Nature Packages: Biodiversity Discovery Journeys",
+      containerId: "wildlife-package-list",
+      packages: [
+        // Wellness packages
+      ]
+    }
+  };
+
 const packageDetails = {
-    "Family Tour Packages": {
-        title: "Family Tour Packages",
-        description: `
-            <h3><strong>Family Paradise: Multi-Generation Goa Experience</strong></h3>
-            <p>Discover why families return to Goa year after year with our thoughtfully designed family packages that cater to all ages. Goa offers a rare combination of educational, entertaining, and relaxing experiences that satisfy everyone from energetic children to grandparents seeking cultural immersion.
-Our Family Paradise package transforms Goa into a natural playground where multiple generations can connect through shared experiences while still having space for age-appropriate activities. We've carefully balanced beach time, cultural exploration, nature adventures, and relaxation to create the perfect family rhythm.</p>
-            <ul>
-            <h5>What Makes This Experience Special:</h5>
-                <li>Family-friendly accommodation with connecting rooms or multi-bedroom villas.</li>
-                <li>Private transportation with child safety seats and comfortable vehicles</li>
-                <li>Interactive heritage walks through Old Goa's UNESCO sites with storytelling guides</li>
-                <li>Beach days at family-friendly shores with gentle waves and lifeguard presence</li>
-                <li>Spice plantation tours where children can identify plants and learn about agriculture</li>
-                <li>Cooking classes where families prepare traditional Goan dishes together</li>
-                <li>Dolphin-spotting boat excursions with marine education components</li>
-                <li>Visit to Bondla Wildlife Sanctuary with kid-focused nature guides</li>
-                <li>Traditional puppet shows and folk performances</li>
-                <li>Shell collecting expeditions with marine biologists</li>
-                <li>Family-friendly restaurants with options for all dietary</li>
-            </ul>
-        `,
-    },
-    "Beach Camping Experiences": {
-        title: "Beach Camping Experiences",
-        description: `
-            <h3><strong>Starlit Shores: Premium Beach Camping Adventure</strong></h3>
-            <p>Experience Goa's beaches like never before with our overnight beach camping adventures—consistently rated among the top beachfront experiences in India by travel bloggers and influencers.</p>
-            <p>While thousands visit Goa's beaches during the day, few experience the magic of falling asleep to crashing waves and waking to spectacular coastal sunrises. Our beach camping packages transform this dream into reality on carefully selected beaches that balance accessibility with seclusion.
-Camp at iconic locations like Arambol Beach, known for its bohemian spirit and spectacular sunsets, or the more secluded Cola Beach with its freshwater lagoon. For those seeking true escape, we offer exclusive access to lesser-known gems like Butterfly Beach and portions of Galgibaga Beach, where Olive Ridley turtles sometimes nest (seasonal).</p>
- <h5>What Makes This Experience Special:</h5>
-            <ul>
-                <li>Premium weatherproof tents with comfortable bedding and amenities.</li>
-                <li>Beachfront bonfires with traditional Goan music and storytelling</li>
-                <li>Fresh seafood barbecues prepared by local chefs using traditional recipes</li>
-                <li>Stargazing sessions with surprising visibility away from city lights</li>
-                <li>Sunrise yoga and meditation sessions on the shore </li>
-                <li>Professional camp management ensuring safety, hygiene, and environmental responsibility</li>
-                <li>Morning activities including kayaking, paddleboarding, or fishing with local fishermen</li>
-            </ul>
-        `,
-    },
-    "Honeymoon Packages": {
-        title: "Honeymoon Packages",
-        description: `
-            <h3><strong>Romance in Paradise: Curated Goa Honeymoon Experience</strong></h3>
-            <p>Discover why Goa consistently ranks among India's top honeymoon destinations, offering newlyweds the perfect blend of romance, adventure, and relaxation. Our meticulously crafted honeymoon packages create the intimate beginnings your marriage deserves.</p>
-            <p>Begin your journey together in luxurious private villa accommodations nestled between swaying palms and golden beaches. Enjoy candlelit dinners under star-filled skies, couples' spa treatments using traditional Goan herbs and techniques, and private sunset cruises along the Arabian Sea.</p>
-             <h5>What Makes This Experience Special:</h5>
-            <ul>
-                <li>Luxury transportation throughout your stay, including airport transfers</li>
-                <li>Accommodation in romantic heritage properties or premium beach resorts</li>
-                <li>Private beach picnics at secluded shores like Butterfly Beach or Kakolem</li>
-                <li>Couples' spa treatments incorporating local spices and Ayurvedic traditions</li>
-                <li>Sunset sailing excursion with champagne and gourmet appetizers</li>
-                <li>Personalized photoshoot at Goa's most picturesque locations</li>
-                <li>Private cooking class learning to prepare authentic Goan specialties together</li>
-                <li>Moonlit beach dinners with personal chef and butler service</li>
-                <li>Special room decorations with flower arrangements and personalized touches</li>
-                <li>Optional adventure activities for couples
-            </ul>
-        `,
-    },
-    "Yoga Packages": {
-        title: "Yoga Packages",
-        description: `
-        <h3><strong>Inner Goa: Transformative Yoga & Wellness Retreat</strong></h3>
-        <p>Discover why Goa has emerged as one of India's premier yoga destinations, attracting practitioners from around the world seeking transformation against the backdrop of sea, sand, and spirituality.</p>
-        <p>Our Inner Goa package harmonizes traditional yogic practices with Goa's natural healing environment. Practice asanas on golden beaches as waves provide natural meditation music. Experience pranayama in bamboo shalas overlooking rice paddies. Learn meditation techniques in centuries-old sacred spaces.</p>
-        <h5>What Makes This Experience Special:</h5>
-        <ul>
-            <li>Yoga classes for all levels, from beginner to advanced, with experienced instructors</li>
-            <li>Ayurvedic consultations with traditional practitioners</li>
-            <li>Personalized wellness plans combining yoga, nutrition, and natural therapies</li>
-            <li>Meditation sessions at sacred sites including the Tambdi Surla Temple, Goa's oldest Hindu monument</li>
-            <li>Farm-to-table vegetarian and vegan meals featuring local organic produce</li>
-            <li>Speciality workshops on topics like chakra balancing, sound healing, and yogic philosophy</li>
-            <li>Accommodation in tranquil retreats away from tourist centers</li>
-            <li>Optional detox programs incorporating local herbs and natural remedies</li>
-            <li>Beach yoga sessions timed with sunrise and sunset</li>
-        </ul>
-    `,
-    },
+    "Adventure Expeditions": {
+        title: "Adventure Expeditions",
+        descriptions: [
+            {
+                title: "Ladakh Adrenaline Explorer",
+                content: `
+                    <div class="package-content">
+                        <!-- Photo Grid -->
+                        <div class="photo-grid">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/zanskar.jpg" class="img-fluid" alt="Zanskar River">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/stok.jpg" class="img-fluid" alt="Stok Kangri">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/khardungla.jpg" class="img-fluid" alt="Khardung La">
+                                </div>
+                            </div>
+                        </div>
 
-    "Nature Packages": {
-        title: "Nature Packages",
-        description: `
-            <h3><strong>Wild Goa: Biodiversity & Ecotourism Expedition</strong></h3>
-            <p>Journey beyond postcard Goa to discover an ecological wonderland that rivals any nature destination in India. Our Wild Goa package showcases the remarkable biodiversity that thrives within this small state—home to over 1,512 documented plant species, 275 bird species, and some of India's most pristine protected areas.</p>
-            <p>Begin with guided exploration of the Bhagwan Mahavir Wildlife Sanctuary and Mollem National Park, Goa's largest protected area and home to rare species including the black panther, giant Malabar squirrel, and Bengal tiger. Visit the mysterious Devil's Canyon with its unique rock formations, then discover the Cotigao Wildlife Sanctuary in southern Goa, known for being less visited but equally spectacular.</p>
-            <h5>What Makes This Experience Special:</h5>
-            <ul>
-            <li>Early morning bird watching excursions with ornithology experts</li>
-            <li>Butterfly identification walks through kaleidoscopic forest clearings</li>
-            <li>Night safaris to observe nocturnal creatures (permit-based)</li>
-            <li>Canoe trips through tranquil mangrove ecosystems of the Zuari and Mandovi Rivers</li>
-            <li>Specialist guides who can identify medicinal plants and explain their traditional uses</li>
-            <li>Visits to spice plantations that practice sustainable agriculture</li>
-            <li>Conservation workshops and hands-on participation in local environmental initiatives</li>
-            <li>Accommodation in eco-lodges that practice responsible tourism</li>
-            </ul>
-        `,
-    },
+                        <!-- Toggle Buttons -->
+                        <div class="toggle-buttons text-center mb-4">
+                            <button class="btn active" data-index="0">Ladakh Adrenaline Explorer</button>
+                            <button class="btn" data-index="1">High Passes Motorcycle Odyssey</button>
+                        </div>
 
-    "Group Packages": {
-        title: "Group Packages",
-        description: `
-                <h3><strong>Goa Tribe: Ultimate Group Adventure Package</strong></h3>
-                <p>Transform your group getaway into an unforgettable bonding experience with our specially designed group packages that showcase why Goa remains India's favorite destination for friends, colleagues, and extended families traveling together.</p>
-                <p>Whether you're planning a college reunion, corporate team building, bachelor/bachelorette celebration, or family gathering, our Goa Tribe package creates the perfect balance of shared experiences and flexibility. We handle the logistics so your group can focus on making memories across Goa's most exciting landscapes.</p>
-                <h5>What Makes This Experience Special:</h5>
-                <ul>
-                <li>Customizable itineraries based on group size, interests, and energy level</li>
-                <li>Private transportation throughout your stay with dedicated group coordinator</li>
-                <li>Choice of accommodation options from luxury villas to boutique hotels</li>
-                <li>Exclusive beach parties with bonfires, music, and catering</li>
-                <li>Group water sports including parasailing, jet skiing, and banana boat rides</li>
-                <li>Team-building activities including beach Olympics and treasure hunts</li>
-                <li>Private boat cruises with music, dancing, and refreshments</li>
-                <li>Group rates for Goa's famous beach clubs and nightlife venues</li>
-                <li>Themed dinner experiences featuring authentic Goan cuisine</li>
-                <li>Professional photography throughout your journey</li>
-                <li>Special arrangements for birthdays and celebrations</li>
-                </ul>
-            `,
-    },
+                        <h3><strong>Ladakh Adrenaline Explorer (7 Days)</strong></h3>
+                        <p>For the thrill-seekers and adventure enthusiasts</p>
+                        
+                        <h5>Highlights:</h5>
+                        <ul>
+                            <li>White water rafting on the Zanskar River</li>
+                            <li>Mountain biking in the Indus Valley</li>
+                            <li>Trek to the base of Stok Kangri</li>
+                            <li>Camping under the stars in remote locations</li>
+                            <li>Khardung La pass motorcycle journey</li>
+                        </ul>
 
-    "Trekking Packages": {
-        title: "Trekking Packages",
-        description: `
-                    <h3><strong>Goa Wilderness Explorer: Western Ghats Trekking Adventure</strong></h3>
-                    <p>Discover why Goa's trekking trails are becoming the state's best-kept secret. Beyond the famous beaches lies a verdant paradise of the Western Ghats, recognized as a UNESCO World Heritage biodiversity hotspot.</p>
-                    <p>Our signature trekking package invites you to explore Goa's dramatic inland landscapes through professionally guided expeditions that balance adventure with safety. Trek through dense forests to discover hidden waterfalls like Netravali and Tambdi Surla, spots that even many locals haven't experienced. Navigate trails around the magnificent Dudhsagar Falls—India's fifth tallest waterfall and one of Goa's most photographed natural wonders—through routes few tourists ever witness.</p>
-                    <h5>What Makes This Experience Special:</h5>
-                    <ul>
-                    <li>Expert local guides who share folklore, identify rare flora and fauna, and ensure your safety</li>
-                    <li>Treks tailored to all fitness levels, from beginner-friendly walks to challenging full-day expeditions</li>
-                    <li>Encounters with wildlife including the Malabar giant squirrel, great hornbill, and if you're lucky, glimpses of the elusive Indian bison</li>
-                    <li>Authentic packed lunches featuring local Goan cuisine prepared by village homestays</li>
-                    <li>Swimming opportunities in pristine natural pools beneath cascading waterfalls</li>
-                    <li>Exclusive access to lesser-known routes like the Hivrem waterfall trail and Chorla Ghat paths</li>
-                    </ul>
-                `,
+                        <h5>Includes:</h5>
+                        <ul>
+                            <li>Accommodation in guesthouses and camps</li>
+                            <li>Specialized equipment for rafting and biking</li>
+                            <li>Professional guides for all activities</li>
+                            <li>Safety briefings and training</li>
+                            <li>All necessary permits and fees</li>
+                            <li>Most meals during the expedition</li>
+                            <li>Airport transfers</li>
+                        </ul>
+
+                        <h5>Price Range:</h5>
+                        <p>₹65,000 - ₹75,000 per person</p>
+                    </div>
+                `
+            },
+            {
+                title: "High Passes Motorcycle Odyssey",
+                content: `
+
+                    <!-- Photo Grid -->
+                        <div class="photo-grid mb-4">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/camp.jpg" class="img-fluid w-100" alt="Zanskar River">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/royal.jpeg" class="img-fluid w-100" alt="Stok Kangri">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/wari la.jpg" class="img-fluid w-100" alt="Khardung La">
+                                </div>
+                            </div>
+                        </div>
+                    <div class="package-content">
+                        <div class="toggle-buttons text-center mb-4">
+                            <button class="btn" data-index="0">Ladakh Adrenaline Explorer</button>
+                            <button class="btn active" data-index="1">High Passes Motorcycle Odyssey</button>
+                        </div>
+
+                        <h3><strong>High Passes Motorcycle Odyssey (9 Days)</strong></h3>
+                        <p>The ultimate Himalayan road trip</p>
+
+                        <h5>Highlights:</h5>
+                        <ul>
+                            <li>Royal Enfield motorcycle tour across Ladakh's most spectacular passes</li>
+                            <li>Ride through Khardung La, Chang La, Wari La, and Tanglang La</li>
+                            <li>Visit remote villages inaccessible by regular tourism</li>
+                            <li>Camp at Pangong Lake and Tso Moriri</li>
+                            <li>Expert motorcycle guides and support vehicles</li>
+                        </ul>
+
+                        <h5>Includes:</h5>
+                        <ul>
+                            <li>Royal Enfield motorcycle rental</li>
+                            <li>Fuel throughout the journey</li>
+                            <li>Accommodation (hotels and camps)</li>
+                            <li>Backup vehicle with mechanic</li>
+                            <li>Most meals during the journey</li>
+                            <li>Riding gear if needed</li>
+                            <li>All necessary permits</li>
+                        </ul>
+
+                        <h5>Price Range:</h5>
+                        <p>₹85,000 - ₹95,000 per person</p>
+                    </div>
+                `
+            }
+        ],
+        currentIndex: 0
     },
+    "Cultural Immersion": {
+        title: "Cultural Immersion",
+        descriptions: [
+            {
+                title: "Ladakhi Heritage Journey",
+                content: `
+                    <div class="package-content">
+                        <!-- Photo Grid -->
+                        <div class="photo-grid mb-4">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/monastery.jpg" class="img-fluid main-photo w-100" alt="Thiksey Monastery">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/cooking.jpg" class="img-fluid w-100" alt="Village Life">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/ancient.jpg" class="img-fluid w-100" alt="Traditional Cooking">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Toggle Buttons -->
+                        <div class="toggle-buttons text-center mb-4">
+                            <button class="btn active" data-index="0">Ladakhi Heritage Journey</button>
+                            <button class="btn" data-index="1">Monastic Circuit</button>
+                        </div>
+
+                        <h3><strong>Ladakhi Heritage Journey (6 Days)</strong></h3>
+                        <p>Discover the living traditions of Little Tibet</p>
+                        
+                        <h5>Highlights:</h5>
+                        <ul>
+                            <li>Monastery visits with Buddhist scholars</li>
+                            <li>Traditional cooking classes in village homes</li>
+                            <li>Participation in local festivals (seasonal)</li>
+                            <li>Ancient art and architecture exploration</li>
+                            <li>Homestay experiences with Ladakhi families</li>
+                        </ul>
+
+                        <h5>Includes:</h5>
+                        <ul>
+                            <li>Accommodation in boutique hotels and authentic homestays</li>
+                            <li>Cultural guides</li>
+                            <li>All entrance fees</li>
+                            <li>Most meals</li>
+                            <li>Local cultural performances</li>
+                            <li>Airport transfers</li>
+                        </ul>
+
+                        <h5>Price Range:</h5>
+                        <p>₹45,000 - ₹55,000 per person</p>
+                    </div>
+                `
+            },
+            {
+                title: "Monastic Circuit",
+                content: `
+                    <div class="package-content">
+                        <!-- Photo Grid -->
+                        <div class="photo-grid mb-4">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/thiksey.jpg" class="img-fluid main-photo w-100" alt="Hemis Monastery">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/manuscript.jpg" class="img-fluid w-100" alt="Morning Prayers">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/Packages/adventure/meditation.jpg" class="img-fluid w-100" alt="Meditation">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Toggle Buttons -->
+                        <div class="toggle-buttons text-center mb-4">
+                            <button class="btn" data-index="0">Ladakhi Heritage Journey</button>
+                            <button class="btn active" data-index="1">Monastic Circuit</button>
+                        </div>
+
+                        <h3><strong>Monastic Circuit (5 Days)</strong></h3>
+                        <p>A spiritual journey through ancient Buddhist monasteries</p>
+
+                        <h5>Highlights:</h5>
+                        <ul>
+                            <li>Guided visits to Thiksey, Hemis, Diskit, Alchi, and Lamayuru monasteries</li>
+                            <li>Morning prayer ceremony participation</li>
+                            <li>Meditation sessions with resident monks</li>
+                            <li>Ancient Buddhist art and manuscript viewing</li>
+                            <li>Spiritual discussions and philosophy talks</li>
+                        </ul>
+
+                        <h5>Includes:</h5>
+                        <ul>
+                            <li>Monastery entrance fees</li>
+                            <li>Donations</li>
+                            <li>Accommodation</li>
+                            <li>Vegetarian meals</li>
+                            <li>Expert spiritual guide</li>
+                            <li>Airport transfers</li>
+                        </ul>
+
+                        <h5>Price Range:</h5>
+                        <p>₹40,000 - ₹48,000 per person</p>
+                    </div>
+                `
+            }
+        ],
+        currentIndex: 0
+    }
 };
 
-$(document).ready(function () {
-    // Debug log to verify jQuery is loaded
-    console.log('jQuery loaded:', typeof $ !== 'undefined');
-
-    // Get all "EXPLORE MORE" buttons
-    $('.explore-more').on('click', function (e) {
+// Update the jQuery code for the new toggle buttons
+$(document).ready(function() {
+    $('.explore-more').on('click', function(e) {
         e.preventDefault();
-
-        // Debug log to verify click handler
-        console.log('Button clicked');
-
         const packageType = $(this).data('package');
         const details = packageDetails[packageType];
 
-        if (details) {
+        if (details && details.descriptions) {
+            details.currentIndex = 0;
+            const currentDescription = details.descriptions[details.currentIndex];
+            
             $('#packageModalLabel').text(details.title);
-            $('.modal-body').html(details.description);
+            $('.modal-body').html(currentDescription.content);
 
-            // Debug log before showing modal
-            console.log('Showing modal for:', packageType);
+            // Handle toggle button clicks
+            $('.modal-body').on('click', '.toggle-buttons .btn', function() {
+                const index = $(this).data('index');
+                if (index !== details.currentIndex) {
+                    $('.package-content').fadeOut(300, function() {
+                        details.currentIndex = index;
+                        const newDescription = details.descriptions[index];
+                        $('.modal-body').html(newDescription.content);
+                        $('.package-content').fadeIn(300);
+                    });
+                }
+            });
 
             $('#packageModal').modal('show');
         }
