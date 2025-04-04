@@ -724,10 +724,10 @@ This thoughtfully sequenced itinerary ensures safe adaptation to the high altitu
 
 This thoughtfully sequenced itinerary ensures safe adaptation to the high altitude while maximizing your experience of the region's remarkable Buddhist heritage, dramatic mountain passes, and unique natural wonders. Perfect for those seeking a complete Ladakh experience.`,
   photos: [
-    "images/Packages/discover/leh-palace.jpg",
+    "images/Packages/discover/leh-palace.jpeg",
     "images/Packages/discover/nubra-landscape.jpg",
     "images/Packages/discover/pangong-sunset.jpg",
-    "images/Packages/discover/hemis-monastery.jpg"
+    "images/Packages/discover/hemis-monastery.jpeg"
   ],
   itinerary: [
     // Day 1
@@ -816,7 +816,7 @@ This expertly sequenced itinerary ensures safe adaptation to the high altitude w
   photos: [
     "images/Packages/discover/leh-overview.jpg",
     "images/Packages/discover/turtuk-village.jpg",
-    "images/Packages/discover/evening-pangong.jpg",
+    "images/Packages/discover/evening-pangong.jpeg",
     "images/Packages/discover/namgyal-tsemo.jpg"
   ],
   itinerary: [
@@ -913,8 +913,8 @@ This expertly sequenced itinerary ensures safe adaptation to the high altitude w
   photos: [
     "images/Packages/discover/leh-aerial.jpg",
     "images/Packages/discover/tso-moriri.jpg",
-    "images/Packages/discover/monastery-view.jpg",
-    "images/Packages/discover/changthang.jpg"
+    "images/Packages/discover/Stakna Monastery.jpeg",
+    "images/Packages/discover/changthang.jpeg"
   ],
   itinerary: [
     // Day 1
@@ -1026,8 +1026,8 @@ This expertly sequenced itinerary ensures safe adaptation to the high altitude w
 This expertly sequenced itinerary combines essential acclimatization with immersive cultural experiences while ensuring comfortable adaptation to high altitudes. Perfect for those seeking a deeper understanding of Ladakh's Buddhist heritage, traditional lifestyles, and living cultural traditions.`,
   photos: [
     "images/Packages/discover/heritage-leh.jpg",
-    "images/Packages/discover/lamayuru-monastery.jpg",
-    "images/Packages/discover/turtuk-culture.jpg",
+    "images/Packages/discover/lamayuru-monastery.jpeg",
+    "images/Packages/discover/turtuk-culture.png",
     "images/Packages/discover/korzok-monastery.jpg"
   ],
   itinerary: [
@@ -1156,7 +1156,7 @@ This expertly sequenced itinerary ensures safe adaptation to high altitudes whil
   photos: [
     "images/Packages/discover/ladakh-complete.jpg",
     "images/Packages/discover/hanle-observatory.jpg",
-    "images/Packages/discover/changthang-wilderness.jpg",
+    "images/Packages/discover/changthang-wilderness.jpeg",
     "images/Packages/discover/ladakh-culture.jpg"
   ],
   itinerary: [

@@ -320,6 +320,35 @@
       background-color: #fafafa;
     }
 
+    
+#modal-includes li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+#modal-includes li:before {
+    content: "✓";
+    color: #E67E22;
+    position: absolute;
+    left: 0;
+}
+
+#modal-excludes li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+#modal-excludes li:before {
+    content: "×";
+    color: red;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
     /* Package Includes */
     #modal-includes {
       list-style-type: none;
