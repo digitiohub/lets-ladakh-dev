@@ -7133,3 +7133,55 @@ p {
     transform: scale(1.05);
     z-index: 1;
 }
+
+.title-section .display-5 {
+    color: #E67E22;  /* Orange color */
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.title-underline {
+    width: 100px;
+    height: 3px;
+    background: #E67E22;  /* Matching orange color for underline */
+    margin: 15px auto;
+}
+
+#modal-excludes li {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+#modal-excludes li::marker {
+    color: #E67E22;
+}
+
+// Add to your CSS file
+
+#modal-includes li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+#modal-includes li:before {
+    content: "✓";
+    color: #E67E22;
+    position: absolute;
+    left: 0;
+}
+
+#modal-excludes li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+#modal-excludes li:before {
+    content: "×";
+    color: red;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}

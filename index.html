@@ -1028,114 +1028,122 @@
   </section>
   <!-- end popular-tours -->
   <section class="adventure-activities">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="section-title">
-            <h2>The Ultimate Ladakh Travel List</h2>
-            <!-- <img src="images/title-seperator.png" alt="Image"> -->
-          </div>
-          <!-- end section-title -->
-        </div>
-        <!-- end col-6 -->
-        <!-- end row -->
-
-        <div class="col-lg-5">
-          <p class="section-desc">Ladakh is a land of ancient monasteries, and high-altitude adventures. Every corner of this Himalayan wonderland has something unique to offer.<br>            
-            Discover Ladakh’s most iconic and hidden gems as we guide you through its most spectacular destinations! 🏔✨
-          </p>
-        </div>
-        <!-- end col-6 -->
-      </div>
-      <!-- end container -->
-      <!-- Replace the current activities carousel section with this -->
-      <div class="col-12">
-        <!-- Desktop version - visible on screens larger than 768px -->
-        <div class="activities-desktop d-none d-md-block">
-          <div class="row">
-            <div class="col-md-3">
-              <a href="curatedpackages.html">
-                <figure class="activity-box">
-                  <img src="images/Packages/northgoa.jpg" alt="Image">
-                  <figcaption>NORTH GOA PACKAGES</figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="curatedpackages.html">
-                <figure class="activity-box">
-                  <img src="images/Packages/southgoa.jpg" alt="Image">
-                  <figcaption>SOUTH GOA PACKAGES</figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="curatedpackages.html">
-                <figure class="activity-box">
-                  <img src="images/Packages/eastgoa.jpg" alt="Image">
-                  <figcaption>EAST GOA PACKAGES</figcaption>
-                </figure>
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="curatedpackages.html">
-                <figure class="activity-box">
-                  <img src="images/Packages/beach.jpg" alt="Image">
-                  <figcaption>BEACH-SPECIFIC PACKAGES</figcaption>
-                </figure>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile version - visible only on screens smaller than 768px -->
-        <div class="activities-carousel d-md-none">
-          <div class="swiper-carousel">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="curatedpackages.html">
-                  <figure class="activity-box"> <img src="images/Packages/northgoa.jpg" alt="Image">
-                    <figcaption>NORTH GOA PACKAGES</figcaption>
-                  </figure>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="curatedpackages.html">
-                  <figure class="activity-box"> <img src="images/Packages/southgoa.jpg" alt="Image">
-                    <figcaption>SOUTH GOA PACKAGES</figcaption>
-                  </figure>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="curatedpackages.html">
-                  <figure class="activity-box"> <img src="images/Packages/eastgoa.jpg" alt="Image">
-                    <figcaption>EAST GOA PACKAGES</figcaption>
-                  </figure>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="curatedpackages.html">
-                  <figure class="activity-box"> <img src="images/Packages/beach.jpg" alt="Image">
-                    <figcaption>BEACH-SPECIFIC PACKAGES</figcaption>
-                  </figure>
-                </a>
-              </div>
-            </div>
-            <!-- Navigation arrows - only for mobile -->
-            <div class="swiper-button-prev">
-              <div class="arrow-left"></div>
-            </div>
-            <div class="swiper-button-next">
-              <div class="arrow-right"></div>
-            </div>
-          </div>
+  <div class="container">
+    <!-- Title and Description Row -->
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="section-title">
+          <h2>The Ultimate Ladakh Travel List</h2>
         </div>
       </div>
-      <!-- end col-12 -->
-      <!-- end col-12 -->
+      <div class="col-lg-5">
+        <p class="section-desc">Ladakh is a land of ancient monasteries, and high-altitude adventures. Every corner of this Himalayan wonderland has something unique to offer.<br>            
+          Discover Ladakh's most iconic and hidden gems as we guide you through its most spectacular destinations! 🏔✨
+        </p>
+      </div>
     </div>
 
-  </section>
+    <!-- Destinations Grid - 3x2 Layout -->
+    <div class="row justify-content-center g-4">
+      <!-- First Row -->
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="tour-box">
+          <figure><img src="images/Packages/destinations/leh.jpg" alt="Leh"></figure>
+          <div class="tour-content">
+            <h3>Leh</h3>
+            <a href="#" class="explore-more" data-package="Leh">EXPLORE MORE</a>
+            <div id="leh-package-list" class="row">
+              <!-- Packages will be loaded here -->
+            </div>
+          </div>
+          <!-- end tour-content -->
+        </div>
+        <!-- end tour-box -->
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="tour-box">
+          <figure><img src="images/Packages/destinations/nubra.jpg" alt="Nubra Valley"></figure>
+          <div class="tour-content">
+            <h3>Nubra Valley</h3>
+            <a href="#" class="explore-more" data-package="NubraValley">EXPLORE MORE</a>
+            <div id="nubra-package-list" class="row">
+              <!-- Packages will be loaded here -->
+            </div>
+          </div>
+          <!-- end tour-content -->
+        </div>
+        <!-- end tour-box -->
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="tour-box">
+          <figure><img src="images/Packages/destinations/pangong.jpg" alt="Pangong Lake"></figure>
+          <div class="tour-content">
+            <h3>Pangong Lake</h3>
+            <a href="#" class="explore-more" data-package="PangongLake">EXPLORE MORE</a>
+            <div id="pangong-package-list" class="row">
+              <!-- Packages will be loaded here -->
+            </div>
+          </div>
+          <!-- end tour-content -->
+        </div>
+        <!-- end tour-box -->
+      </div>
+
+      <!-- Second Row -->
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="tour-box">
+          <figure><img src="images/Packages/destinations/tso.jpeg" alt="Tso Moriri"></figure>
+          <div class="tour-content">
+            <h3>Tso Moriri</h3>
+            <a href="#" class="explore-more" data-package="TsoMoriri">EXPLORE MORE</a>
+            <div id="tso-package-list" class="row">
+              <!-- Packages will be loaded here -->
+            </div>
+          </div>
+          <!-- end tour-content -->
+        </div>
+        <!-- end tour-box -->
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="tour-box">
+          <figure><img src="images/Packages/destinations/zanskar.jpg" alt="Zanskar Valley"></figure>
+          <div class="tour-content">
+            <h3>Zanskar Valley</h3>
+            <a href="#" class="explore-more" data-package="ZanskarValley">EXPLORE MORE</a>
+            <div id="zanskar-package-list" class="row">
+              <!-- Packages will be loaded here -->
+            </div>
+          </div>
+          <!-- end tour-content -->
+        </div>
+        <!-- end tour-box -->
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="tour-box">
+          <figure><img src="images/Packages/destinations/kargil.jpg" alt="Kargil"></figure>
+          <div class="tour-content">
+            <h3>Kargil</h3>
+            <a href="#" class="explore-more" data-package="Kargil">EXPLORE MORE</a>
+            <div id="kargil-package-list" class="row">
+              <!-- Packages will be loaded here -->
+            </div>
+          </div>
+          <!-- end tour-content -->
+        </div>
+        <!-- end tour-box -->
+      </div>
+
+    <!-- Mobile Carousel -->
+    <div class="activities-carousel d-md-none">
+      <!-- ... existing mobile swiper code ... -->
+    </div>
+  </div>
+</section>
+
   <!-- end adventure-activities -->
   <section class="reviews">
     <div class="container">
@@ -1189,7 +1197,7 @@
               </div>
               <!-- end swiper-slide -->
               <div class="swiper-slide">
-                <div class="review"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                <div class="review"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> < i class="fa fa-star"></i> <i
                     class="fa fa-star"></i> <i class="fa fa-star"></i>
                   <h4>A truly amazing experience!</h4>
                   <p>One of the best places to book your travel.
