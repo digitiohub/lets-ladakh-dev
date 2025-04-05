@@ -6062,6 +6062,7 @@ p {
     margin-right: 10px;
     color: #ff9019;
 }
+
 @media only screen and (max-width: 1199px),
     only screen and (max-device-width: 1139px) {
     .header-denmark .swiper-custom-pagination {
