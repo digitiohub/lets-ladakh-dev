@@ -559,6 +559,10 @@ p {
 .navbar .navbar-nav .nav-item .dropdown-menu li:hover {
     background-color: #f4fbff;
 }
+.navbar .navbar-nav .nav-item .dropdown-menu li:hover .sub-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
 .navbar .navbar-nav .nav-item .dropdown-menu li a {
     cursor: pointer;
     float: left;
@@ -4311,10 +4315,6 @@ p {
     content: "";
     font-family: FontAwesome;
     font-size: 20px;
-.form-group.select-group:before {
-    content: "";
-    font-family: FontAwesome;
-    font-size: 20px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     color: #ff9019;
@@ -4864,7 +4864,7 @@ p {
 .tour-attraction .attraction-carousel .attraction-box:hover img {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-    webkit-: blur(4px);
+    webkit-filter: blur(4px);
     -webkit-filter: blur(4px);
     filter: blur(4px);
 }
@@ -6112,12 +6112,17 @@ p {
     .contact .contact-box:after {
         display: none;
     }
-    .popular-destinations .col-lg-6 {
-        padding: 15px 0;
+    .popular-destinations figure {
+        -webkit-box-flex: 60% !important;
+        -ms-flex: 60% !important;
+        flex: 60% !important;
+        height: 258px !important;
     }
-    .popular-destinations .col-lg-6:nth-child(odd) {
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px);
+    .popular-destinations .destinations-content {
+        -webkit-box-flex: 60% !important;
+        -ms-flex: 60% !important;
+        flex: 60% !important;
+        height: 258px !important;
     }
 }
 @media only screen and (max-width: 991px),
@@ -7072,150 +7077,3 @@ p {
     z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
-
-.toggle-buttons {
-    border-bottom: 1px solid #dee2e6;
-    padding-bottom: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.toggle-buttons .btn {
-    margin: 0 0.5rem;
-    min-width: 220px;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    background-color: #fff;
-    color: #ff5a1f;
-    border: 2px solid #ff5a1f;
-}
-
-.toggle-buttons .btn.active {
-    background-color: #ff5a1f;
-    border-color: #ff5a1f;
-    color: #fff;
-    box-shadow: 0 4px 12px rgba(255, 90, 31, 0.2);
-}
-
-.toggle-buttons .btn:not(.active):hover {
-    background-color: #ff5a1f;
-    color: #fff;
-    transform: translateY(-2px);
-}
-
-.photo-grid {
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.photo-grid .row {
-    height: 250px;
-}
-
-.photo-grid .col-4 {
-    height: 100%;
-}
-
-.photo-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s ease;
-}
-
-.photo-grid .col-4:not(:last-child) img {
-    border-right: 2px solid white;
-}
-
-.photo-grid img:hover {
-    transform: scale(1.05);
-    z-index: 1;
-}
-
-.title-section .display-5 {
-    color: #E67E22;  /* Orange color */
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.title-underline {
-    width: 100px;
-    height: 3px;
-    background: #E67E22;  /* Matching orange color for underline */
-    margin: 15px auto;
-}
-
-#modal-excludes li {
-    color: #666;
-    margin-bottom: 8px;
-}
-
-#modal-excludes li::marker {
-    color: #E67E22;
-}
-
-
-// Add to your CSS file
-
-#modal-includes li {
-    list-style-type: none;
-    position: relative;
-    padding-left: 25px;
-}
-
-#modal-includes li:before {
-    content: "✓";
-    color: #E67E22;
-    position: absolute;
-    left: 0;
-}
-
-#modal-excludes li {
-    list-style-type: none;
-    position: relative;
-    padding-left: 25px;
-}
-
-#modal-excludes li:before {
-    content: "×";
-    color: red;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.photo-grid {
-  display: grid;
-  gap: 20px;
-  margin: 20px 0;
-}
-
-.photo-row-1 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.photo-row-2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.photo-grid img {
-  width: 100%;
-  aspect-ratio: 4/3;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-  .photo-row-1,
-  .photo-row-2 {
-    grid-template-columns: 1fr;
-  }
-}
