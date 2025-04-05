@@ -785,6 +785,223 @@ packageSets.activities.packages = [
     ],
   },
 
+  {
+    id: 2,
+    mini_title: "Cultural Immersion",
+    title: "Cultural Immersion",
+    description: `
+      Immerse yourself in Ladakh’s rich cultural tapestry through authentic experiences, from spiritual monastery stays to local village life. This curated selection allows you to engage with traditions, festivals, and crafts that define the soul of Ladakh.
+    `,
+    photos: [
+      "images/Packages/culture/monastery-life.jpg",
+      "images/Packages/culture/village-homestay.jpg",
+      "images/Packages/culture/cultural-workshops.jpg",
+      "images/Packages/culture/hemis-festival.jpg"
+    ],
+    itinerary: [
+      // Monastery Experiences
+      { day: "Monastery Experiences", activity: "Meditation retreats at Hemis, Thiksey, or Lamayuru monasteries" },
+      { day: "Monastery Experiences", activity: "Festival participation - witness the colorful masked dances during Hemis Festival, Losar celebrations, or Gustor" },
+      { day: "Monastery Experiences", activity: "Monk interactions - learn about Buddhist philosophy and daily monastic life" },
+  
+      // Village Homestays
+      { day: "Village Homestays", activity: "Experience authentic Ladakhi hospitality" },
+      { day: "Village Homestays", activity: "Participate in daily farming activities" },
+      { day: "Village Homestays", activity: "Learn traditional cooking methods" },
+      { day: "Village Homestays", activity: "Connect with local families in villages like Stok, Alchi, and Turtuk" },
+  
+      // Cultural Workshops
+      { day: "Cultural Workshops", activity: "Traditional Ladakhi cooking classes" },
+      { day: "Cultural Workshops", activity: "Thangka painting lessons" },
+      { day: "Cultural Workshops", activity: "Pottery making in Likir village" },
+      { day: "Cultural Workshops", activity: "Music and dance sessions with local artists" }
+    ],
+    includes: [
+      "Guided monastery visits and festival entries",
+      "Accommodation in family-run homestays with meals",
+      "All workshop materials and expert instructors",
+      "Transportation between villages and monasteries"
+    ],
+    excludes: [
+      "Airfare to/from Leh",
+      "Personal donations at monasteries (optional)",
+      "Travel insurance",
+      "Tips for hosts and local artists",
+      "Any extra activities not listed in the package"
+    ]
+  },
+
+  {
+    id: 3,
+    mini_title: "Nature & Wildlife",
+    title: "Nature & Wildlife Encounters",
+    description: `
+      Discover the untamed side of Ladakh through tranquil lakes, rare high-altitude wildlife, and the most breathtaking night skies on Earth. This journey is perfect for nature lovers, birdwatchers, and stargazers seeking awe-inspiring encounters.
+    `,
+    photos: [
+      "images/Packages/culture/pangong-lake.jpeg",
+      "images/Packages/culture/hemis-national-park.jpg",
+      "images/Packages/culture/stargazing-ladakh.jpeg",
+      "images/Packages/culture/tso-moriri-birdwatching.jpeg"
+    ],
+    itinerary: [
+      // High-Altitude Lakes
+      { day: "High-Altitude Lakes", activity: "Pangong Lake – Marvel at the changing colors of this iconic lake" },
+      { day: "High-Altitude Lakes", activity: "Tso Moriri – Bird watching and camping by this pristine lake" },
+      { day: "High-Altitude Lakes", activity: "Tso Kar – Spot rare wildlife around this salt lake" },
+  
+      // Wildlife Safaris
+      { day: "Wildlife Safaris", activity: "Guided tours through Hemis National Park – home to the elusive snow leopard" },
+      { day: "Wildlife Safaris", activity: "Bird watching expeditions in Changthang Wildlife Sanctuary" },
+      { day: "Wildlife Safaris", activity: "Photography tours focused on capturing Ladakh's unique biodiversity" },
+  
+      // Stargazing
+      { day: "Stargazing", activity: "Experience some of the clearest night skies on Earth" },
+      { day: "Stargazing", activity: "Guided astronomy sessions away from light pollution" },
+      { day: "Stargazing", activity: "Astrophotography workshops under the Milky Way" }
+    ],
+    includes: [
+      "Guided wildlife and birdwatching safaris with expert naturalists",
+      "Accommodation near lakes and wildlife zones (deluxe camps or eco-lodges)",
+      "Stargazing equipment and expert-led astronomy sessions",
+      "All transportation during the program",
+      "Park entry fees and required permits"
+    ],
+    excludes: [
+      "Airfare to/from Leh",
+      "Personal photography equipment",
+      "Meals not mentioned in the itinerary",
+      "Travel insurance",
+      "Tips for guides and naturalists",
+      "Optional astrophotography gear rental"
+    ]
+  },  
+
+  {
+    id: 4,
+    mini_title: "Wellness Journeys",
+    title: "Wellness Journeys",
+    description: `
+      Find balance and rejuvenation in Ladakh’s serene landscapes. Our wellness journeys offer natural healing experiences, mindful movement, and spiritual renewal through hot springs, yoga, and breathwork—set amidst the Himalayan silence.
+    `,
+    photos: [
+      "images/Packages/wellness/panamik-hot-springs.jpg",
+      "images/Packages/wellness/yoga-himalayas.jpg",
+      "images/Packages/wellness/chumathang-retreat.jpg",
+      "images/Packages/wellness/breathwork-session.jpg"
+    ],
+    itinerary: [
+      // Hot Springs
+      { day: "Hot Springs", activity: "Rejuvenate in the natural hot springs of Panamik" },
+      { day: "Hot Springs", activity: "Experience the healing mineral waters of Chumathang" },
+      { day: "Hot Springs", activity: "Combine hot spring visits with guided meditation practices for holistic wellness" },
+  
+      // Yoga Retreats
+      { day: "Yoga Retreats", activity: "Sunrise yoga sessions against breathtaking Himalayan backdrops" },
+      { day: "Yoga Retreats", activity: "Multi-day wellness retreats combining yoga, meditation, and local nutritional guidance" },
+      { day: "Yoga Retreats", activity: "Specialized breathing workshops tailored for high-altitude adaptation and inner clarity" }
+    ],
+    includes: [
+      "Daily yoga and meditation sessions led by certified instructors",
+      "Access to Panamik and Chumathang hot springs",
+      "Accommodation in wellness-focused retreats or eco-lodges",
+      "All vegetarian meals and herbal infusions during retreats",
+      "Workshops on mindfulness, nutrition, and breathwork",
+      "Transportation between wellness sites"
+    ],
+    excludes: [
+      "Airfare to/from Leh",
+      "Personal wellness equipment (mats, towels, etc.)",
+      "Spa treatments not mentioned in the itinerary",
+      "Travel insurance",
+      "Tips for instructors and retreat staff",
+      "Any other personal expenses"
+    ]
+  },
+
+  {
+    id: 5,
+    mini_title: "Seasonal Experiences",
+    title: "Seasonal Experiences",
+    description: `
+      Discover the magic of Ladakh across seasons. Whether you seek lush green valleys and vibrant festivals in summer or the ethereal stillness and snow leopards of winter, Ladakh offers distinct wonders year-round.
+    `,
+    photos: [
+      "images/Packages/seasonal/summer-valley-bloom.jpg",
+      "images/Packages/seasonal/chadar-trek-winter.jpg",
+      "images/Packages/seasonal/snow-leopard.jpg",
+      "images/Packages/seasonal/winter-festival.jpg"
+    ],
+    itinerary: [
+      // Summer Highlights (May–September)
+      { day: "Summer Highlights (May–September)", activity: "All major trekking routes open for adventure seekers" },
+      { day: "Summer Highlights (May–September)", activity: "Vibrant green valleys and flower blooms in full glory" },
+      { day: "Summer Highlights (May–September)", activity: "Attend most festivals and cultural events, including Hemis and Sindhu Darshan" },
+      { day: "Summer Highlights (May–September)", activity: "Perfect weather for camping, rafting, and outdoor photography" },
+  
+      // Winter Magic (October–April)
+      { day: "Winter Magic (October–April)", activity: "Experience the surreal Chadar Trek across frozen Zanskar River" },
+      { day: "Winter Magic (October–April)", activity: "Greater chance of spotting elusive snow leopards in the wild" },
+      { day: "Winter Magic (October–April)", activity: "Fewer tourists and tranquil snow-covered landscapes" },
+      { day: "Winter Magic (October–April)", activity: "Celebrate authentic winter festivals like Losar and Spituk Gustor" }
+    ],
+    includes: [
+      "Customized itinerary based on travel season",
+      "Guides with expertise in seasonal trekking and wildlife",
+      "Accommodation suited to weather conditions (heated rooms in winter)",
+      "Festival access and cultural experiences depending on month of visit",
+      "All entry permits and environmental fees"
+    ],
+    excludes: [
+      "Flights to/from Leh",
+      "Seasonal gear rentals (e.g., insulated boots, crampons)",
+      "Personal expenses",
+      "Travel insurance (especially important in winter)",
+      "Optional winter camping equipment",
+      "Tips for guides and support staff"
+    ]
+  },
+
+  {
+  id: 6,
+  mini_title: "Unique Ladakhi Experiences",
+  title: "Unique Ladakhi Experiences",
+  description: `
+    Go beyond sightseeing with immersive, offbeat experiences that connect you deeply with Ladakh's people, traditions, and environment. These meaningful interactions are designed to offer both cultural enrichment and responsible travel.
+  `,
+  photos: [
+    "images/Packages/unique/farm-tour-ladakh.jpg",
+    "images/Packages/unique/skyu-cooking.jpg",
+    "images/Packages/unique/apricot-drying.jpeg",
+    "images/Packages/unique/community-tourism.jpg"
+  ],
+  itinerary: [
+    // Sustainable Tourism Initiatives
+    { day: "Sustainable Tourism Initiatives", activity: "Join eco-friendly farm tours and learn about Ladakh’s sustainable agriculture" },
+    { day: "Sustainable Tourism Initiatives", activity: "Participate in local conservation projects such as reforestation or water conservation efforts" },
+    { day: "Sustainable Tourism Initiatives", activity: "Engage in community-based tourism initiatives that directly support local livelihoods" },
+
+    // Culinary Adventures
+    { day: "Culinary Adventures", activity: "Learn to make traditional butter tea in a Ladakhi kitchen" },
+    { day: "Culinary Adventures", activity: "Participate in apricot harvesting and sun-drying during the summer season" },
+    { day: "Culinary Adventures", activity: "Hands-on cooking sessions: prepare skyu, thukpa, and momos with local families" },
+    { day: "Culinary Adventures", activity: "Enjoy farm-to-table meals with seasonal local ingredients and age-old culinary wisdom" }
+  ],
+  includes: [
+    "Local guides and facilitators for each experience",
+    "All ingredients and materials for culinary sessions",
+    "Transportation to experience sites",
+    "Refreshments and meals during activities",
+    "Opportunities to interact directly with Ladakhi artisans and farmers"
+  ],
+  excludes: [
+    "Travel to/from Leh",
+    "Personal purchases during farm or community visits",
+    "Travel insurance",
+    "Tips for local hosts and guides",
+    "Optional donations to local NGOs or community groups"
+  ]
+}
 ]
 // Display Package List
 function displayAllPackageSets() {
