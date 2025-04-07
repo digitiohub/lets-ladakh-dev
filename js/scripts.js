@@ -146,7 +146,7 @@
 
 
 	// SLIDER
-	var menu = ['EXPLORE GOA<span>AUTHENTIC EXPERIENCES</span>', 'BEACH GETAWAYS<span>GOLDEN SHORES</span>', 'CULTURAL HERITAGE<span>PORTUGUESE LEGACY</span>', 'ADVENTURE TOURS<span>THRILL SEEKERS</span>'];
+	var menu = ['EXPLORE LADAKH<span>HIMALAYAN WONDERS</span>', 'MOUNTAIN GETAWAYS<span>MAJESTIC LANDSCAPES</span>', 'CULTURAL HERITAGE<span>BUDDHIST LEGACY</span>', 'ADVENTURE TOURS<span>THRILL SEEKERS</span>'];
 	var interleaveOffset = 0.5;
 	var swiperOptions = {
 		loop: true,
