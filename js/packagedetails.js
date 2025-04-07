@@ -1166,6 +1166,9 @@ const packageDetails = {
 
 // Update the jQuery code for the new toggle buttons
 $(document).ready(function() {
+    // Add custom rounded corners to all images in the photo grid
+    $('.photo-grid img').addClass('img-rounded-custom');
+    
     $('.explore-more').on('click', function(e) {
         e.preventDefault();
         const packageType = $(this).data('package');
@@ -1177,6 +1180,9 @@ $(document).ready(function() {
             
             $('#packageModalLabel').text(details.title);
             $('.modal-body').html(currentDescription.content);
+            
+            // Apply rounded corners to newly loaded images
+            $('.modal-body .photo-grid img').addClass('img-rounded-custom');
 
             // Handle toggle button clicks
             $('.modal-body').on('click', '.toggle-buttons .btn', function() {
@@ -1186,6 +1192,7 @@ $(document).ready(function() {
                         details.currentIndex = index;
                         const newDescription = details.descriptions[index];
                         $('.modal-body').html(newDescription.content);
+                        $('.modal-body .photo-grid img').addClass('img-rounded-custom');
                         $('.package-content').fadeIn(300);
                     });
                 }
