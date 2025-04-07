@@ -320,34 +320,34 @@
       background-color: #fafafa;
     }
 
-    
-#modal-includes li {
-    list-style-type: none;
-    position: relative;
-    padding-left: 25px;
-}
 
-#modal-includes li:before {
-    content: "✓";
-    color: #E67E22;
-    position: absolute;
-    left: 0;
-}
+    #modal-includes li {
+      list-style-type: none;
+      position: relative;
+      padding-left: 25px;
+    }
 
-#modal-excludes li {
-    list-style-type: none;
-    position: relative;
-    padding-left: 25px;
-}
+    #modal-includes li:before {
+      content: "✓";
+      color: #E67E22;
+      position: absolute;
+      left: 0;
+    }
 
-#modal-excludes li:before {
-    content: "×";
-    color: red;
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-    font-size: 1.2em;
-}
+    #modal-excludes li {
+      list-style-type: none;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    #modal-excludes li:before {
+      content: "×";
+      color: red;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
 
     /* Package Includes */
     #modal-includes {
@@ -679,7 +679,7 @@
       </div>
     </div>
   </section>
-  
+
 
   <!-- Update the Modal Structure -->
   <div id="packageModal" class="modal">
@@ -714,10 +714,9 @@
         <!-- Package Includes -->
         <h3 class="modal-section-header">Package Includes</h3>
         <ul id="modal-includes"></ul>
-
+        
         <h3 class="modal-section-header">Package Excludes</h3>
-          <ul id="modal-excludes"></ul>
-        </div>
+        <ul id="modal-excludes"></ul>
       </div>
 
       <div class="modal-footer">

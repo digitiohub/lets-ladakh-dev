@@ -1,1 +1,1 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a7504ba7-cf4f-4c22-9c73-1c4d4357568a/deploy-status)](https://app.netlify.com/sites/demochalogoa/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/268a51a4-9738-454a-aa8d-2123d5baf02e/deploy-status)](https://app.netlify.com/sites/demoletsladakh/deploys)
