@@ -1168,6 +1168,7 @@ const packageDetails = {
 $(document).ready(function() {
     $('.explore-more').on('click', function(e) {
         e.preventDefault();
+
         const packageType = $(this).data('package');
         const details = packageDetails[packageType];
 
@@ -1178,9 +1179,12 @@ $(document).ready(function() {
             $('#packageModalLabel').text(details.title);
             $('.modal-body').html(currentDescription.content);
 
-            // Handle toggle button clicks
+            // Unbind previous toggle click handlers to avoid interference
+            $('.modal-body').off('click', '.toggle-buttons .btn');
+
+            // Bind new toggle handler (convert data-index to a number)
             $('.modal-body').on('click', '.toggle-buttons .btn', function() {
-                const index = $(this).data('index');
+                const index = Number($(this).data('index'));
                 if (index !== details.currentIndex) {
                     $('.package-content').fadeOut(300, function() {
                         details.currentIndex = index;
