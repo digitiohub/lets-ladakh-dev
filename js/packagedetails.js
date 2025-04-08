@@ -1,96 +1,96 @@
 const packageSets = {
     trekking: {
-      title: "Adventure Expeditions",
-      containerId: "adventure-package-list",
-      packages: [
-        // Trekking packages
-      ]
+        title: "Adventure Expeditions",
+        containerId: "adventure-package-list",
+        packages: [
+            // Trekking packages
+        ]
     },
     adventure: {
-      title: "Cultural Immersion",
-      containerId: "cultural-package-list",
-      packages: [
-        // Adventure packages
-      ]
+        title: "Cultural Immersion",
+        containerId: "cultural-package-list",
+        packages: [
+            // Adventure packages
+        ]
     },
     cultural: {
-      title: "Photography Specials",
-      containerId: "photography",
-      packages: [
-        // Cultural packages
-      ]
+        title: "Photography Specials",
+        containerId: "photography",
+        packages: [
+            // Cultural packages
+        ]
     },
     wildlife: {
-      title: "Duration Packages",
-      containerId: "duration-package-list",
-      packages: [
-        // Wellness packages
-      ]
+        title: "Duration Packages",
+        containerId: "duration-package-list",
+        packages: [
+            // Wellness packages
+        ]
     },
     seasonal: {
         title: "Seasonal Specials",
         containerId: "seasonal-package-list",
         packages: [
-          // Cultural packages
+            // Cultural packages
         ]
-      },
-      family: {
+    },
+    family: {
         title: "Family Expeditions",
         containerId: "family-package-list",
         packages: [
-          // Cultural packages
+            // Cultural packages
         ]
-      },
-      customized: {
+    },
+    customized: {
         title: "Customized Journeys",
         containerId: "customized-package-list",
         packages: [
-          // Cultural packages
+            // Cultural packages
         ]
-      },
-      Leh: {
+    },
+    Leh: {
         title: "Leh",
         containerId: "leh-package-list",
         packages: [
-          // Cultural packages
+            // Cultural packages
         ]
-      },
-      NubraValley: {
+    },
+    NubraValley: {
         title: "Nubra Valley",
         containerId: "nubra-package-list",
         packages: [
-          // Cultural packages
+            // Cultural packages
         ]
-      },
-      PangongLake: {
+    },
+    PangongLake: {
         title: "Pangong Lake",
         containerId: "pangong-package-list",
         packages: [
-          // Cultural packages
+            // Cultural packages
         ]
-      },
-      TsoMoriri: {
+    },
+    TsoMoriri: {
         title: "Tso Moriri",
         containerId: "tso-package-list",
         packages: [
-          // Cultural packages
+            // Cultural packages
         ]
-      },
-      ZanskarValley: {
-            title: "Zanskar Valley",
-            containerId: "zanskar-package-list",
-            packages: [
+    },
+    ZanskarValley: {
+        title: "Zanskar Valley",
+        containerId: "zanskar-package-list",
+        packages: [
             // Cultural packages
-            ]
-        },
-       Kargil: {
-            title: "Kargil",
-            containerId: "kargil-package-list",
-            packages: [
+        ]
+    },
+    Kargil: {
+        title: "Kargil",
+        containerId: "kargil-package-list",
+        packages: [
             // Cultural packages
-            ]
-        }
-  };
+        ]
+    }
+};
 
 const packageDetails = {
     "Adventure Expeditions": {
@@ -153,6 +153,7 @@ const packageDetails = {
                 title: "High Passes Motorcycle Odyssey",
                 content: `
 
+                <div class="package-content">
                     <!-- Photo Grid -->
                         <div class="photo-grid mb-4">
                             <div class="row g-0">
@@ -167,7 +168,6 @@ const packageDetails = {
                                 </div>
                             </div>
                         </div>
-                    <div class="package-content">
                         <div class="toggle-buttons text-center mb-4">
                             <button class="btn" data-index="0">Ladakh Adrenaline Explorer</button>
                             <button class="btn active" data-index="1">High Passes Motorcycle Odyssey</button>
@@ -1164,40 +1164,90 @@ const packageDetails = {
     }
 };
 
-// Update the jQuery code for the new toggle buttons
-$(document).ready(function() {
+
+
+// Keep track of which package is currently being viewed
+let currentPackageType = null;
+
+// Add custom CSS for toggle buttons to ensure consistent styling across pages
+const customStyles = `
+    <style>
+        .toggle-buttons .btn {
+            padding: 10px 16px;
+            margin: 0 5px;
+            border-radius: 30px; 
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: #f0f0f0;
+            color: #555;
+            border: none;
+            font-weight: 600;
+        }
+        
+        .toggle-buttons .btn.active {
+            background: linear-gradient(45deg, #ff9019, #ffb067);
+            color: white;
+            box-shadow: 0 3px 10px rgba(255, 144, 25, 0.2);
+        }
+        
+        .toggle-buttons .btn:hover:not(.active) {
+            background-color: #e0e0e0;
+        }
+    </style>
+`;
+
+$(document).ready(function () {
+
+    // Add the custom styles to the head of the document
+    $('head').append(customStyles);
+
     // Add custom rounded corners to all images in the photo grid
     $('.photo-grid img').addClass('img-rounded-custom');
-    
-    $('.explore-more').on('click', function(e) {
+
+    // Remove existing event handler to prevent duplication
+    $(document).off('click', '.toggle-buttons .btn');
+
+    // Add a global event handler for toggle buttons
+    $(document).on('click', '.toggle-buttons .btn', function () {
+        const index = $(this).data('index');
+        const details = packageDetails[currentPackageType];
+
+        if (details && index !== details.currentIndex) {
+            details.currentIndex = index;
+            const newDescription = details.descriptions[index];
+
+            // Fade out, replace content, then fade in
+            $('.package-content').fadeOut(300, function () {
+                $('.modal-body').html(newDescription.content);
+                $('.modal-body .photo-grid img').addClass('img-rounded-custom');
+
+                // Make the correct button active
+                $('.modal-body .toggle-buttons .btn').removeClass('active');
+                $(`.modal-body .toggle-buttons .btn[data-index="${index}"]`).addClass('active');
+
+                $('.package-content').fadeIn(300);
+            });
+        }
+    });
+
+    // Handler for explore more button
+    $('.explore-more').on('click', function (e) {
         e.preventDefault();
         const packageType = $(this).data('package');
+        currentPackageType = packageType; // Store the current package type globally
         const details = packageDetails[packageType];
 
         if (details && details.descriptions) {
             details.currentIndex = 0;
             const currentDescription = details.descriptions[details.currentIndex];
-            
+
             $('#packageModalLabel').text(details.title);
             $('.modal-body').html(currentDescription.content);
-            
+
             // Apply rounded corners to newly loaded images
             $('.modal-body .photo-grid img').addClass('img-rounded-custom');
 
-            // Handle toggle button clicks
-            $('.modal-body').on('click', '.toggle-buttons .btn', function() {
-                const index = $(this).data('index');
-                if (index !== details.currentIndex) {
-                    $('.package-content').fadeOut(300, function() {
-                        details.currentIndex = index;
-                        const newDescription = details.descriptions[index];
-                        $('.modal-body').html(newDescription.content);
-                        $('.modal-body .photo-grid img').addClass('img-rounded-custom');
-                        $('.package-content').fadeIn(300);
-                    });
-                }
-            });
-
+            // Show the modal
             $('#packageModal').modal('show');
         }
     });
