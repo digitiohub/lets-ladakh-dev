@@ -19,7 +19,7 @@
   <meta property="og:title" content="Safari Sutra Holidays">
   <meta property="og:description" content="Discover the Real Goa | Authentic Experiences Beyond the Tourist Trail">
   <meta property="og:image" content="https://chalogoa.com/images/Packages/logo.png">
-  
+
   <!-- FAVICON -->
   <link rel="icon" type="image/svg+xml" href="ico/favicon.png" />
 
@@ -494,27 +494,23 @@
           <div class="col-lg-8 col-md-10">
             <form class="row" id="contactForm">
               <div class="form-group col-md-6">
-                <input type="text" placeholder="Full Name*" required>
+                <input type="text" name="name" placeholder="Full Name*" required>
               </div>
 
               <div class="form-group col-md-6">
-                <input type="text" placeholder="Email Address*" required>
+                <input type="text" name="email" placeholder="Email Address*" required>
               </div>
 
               <div class="form-group col-md-6">
-                <input type="text" placeholder="Phone Number*" required>
-              </div>
-
-              <div class="form-group col-md-6">
-                <input type="text" placeholder="Subject*" required>
+                <input type="text" name="phone" placeholder="Phone Number*" required>
               </div>
 
               <div class="form-group col-12">
-                <textarea placeholder="Tell us about your travel plans or questions*" required></textarea>
+                <textarea name="message" placeholder="Tell us about your travel plans or questions"></textarea>
               </div>
 
               <div class="form-group col-12 text-center">
-                <button type="submit">SEND MESSAGE</button>
+                <button type="submit" class="submit-btn">Send Message <i class="fa fa-paper-plane"></i></button>
               </div>
             </form>
           </div>
@@ -676,6 +672,62 @@
   <script src="js/wow.min.js"></script>
   <script src="js/odometer.min.js"></script>
   <script src="js/scripts.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("GO1O1TUjcWE7_c7XZ"); // Replace with your actual EmailJS user ID from Account Settings
+    })();
+  </script>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Show loading indicator
+      const btn = document.querySelector('#contactForm button[type="submit"]');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Sending...';
+      btn.disabled = true;
+
+      // Check if all required fields are filled
+      const nameInput = this.querySelector('input[name="name"]');
+      const emailInput = this.querySelector('input[name="email"]');
+      const phoneInput = this.querySelector('input[name="phone"]');
+      const messageInput = this.querySelector('textarea[name="message"]');
+
+      if (!nameInput.value || !phoneInput.value) {
+        alert('Please fill in all required fields');
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        return;
+      }
+
+      // Prepare form data
+      const formData = {
+        name: nameInput.value,
+        email: emailInput.value || "No email provided",
+        phone: phoneInput.value,
+        message: messageInput.value || "No message provided",
+      };
+
+      // Send email using EmailJS
+      emailjs.send('service_of9t2au', 'template_jc3vwiq', formData)
+        .then(function () {
+          // Success message
+          alert('Your message has been sent successfully!');
+          document.getElementById('contactForm').reset();
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+        }, function (error) {
+          // Error message
+          alert('Sorry, there was an error sending your message. Please try again later.');
+          console.error('EmailJS error:', error);
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+        });
+    });
+  </script>
 </body>
 
 </html>
